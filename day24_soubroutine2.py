@@ -1,5 +1,7 @@
 import random
+
 print ("Infinity Dice!")
+
 sides = int(input("How many sides? "))
 def roll_dice(sides):
     while True:
