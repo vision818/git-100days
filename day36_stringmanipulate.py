@@ -1,13 +1,17 @@
-myList = []
+names = []
 
 def printList():
   print()
-  for i in myList:
-    print(i)
+  for name in names:
+    print(name)
   print()
 
 while True:
-  addItem = input("Item > ").capitalize().strip()
-  if addItem not in myList:
-    myList.append(addItem) 
+  firstName = input("First Name: ").strip().capitalize()
+  lastName = input("Last Name: ").strip().capitalize()
+  name = f"{firstName} {lastName}"
+  if name not in names:
+    names.append(name)
+  else:
+    print("ERROR: Duplicate name")
   printList()

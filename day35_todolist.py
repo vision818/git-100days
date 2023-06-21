@@ -63,16 +63,13 @@ while ask == "view" or "add" or "remove":
     elif ask == "edit":
         print(f"What do you want to remove? ")
         printlist()
-        remove_item = input("What do you want to remove?, type everything if yoou want to delete everything! ")
+        remove_item = input("What do you want to remove?")
         if remove_item in todo_list:
             sure = input(f"Are you sure you wanr to remove {remove_item}")
             if sure == "yes":
                 todo_list.remove(remove_item)
                 print(f"{remove_item} is removed!")
 
-        elif remove_item == "everything":
-            for i in len(todo_list):
-                todo_list.remove[i]
 
         else:
             print("was not in the list.")
@@ -89,3 +86,5 @@ while ask == "view" or "add" or "remove":
 
 
 #################
+
+

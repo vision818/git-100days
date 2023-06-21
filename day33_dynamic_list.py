@@ -58,7 +58,7 @@ while ask == "view" or "add" or "remove":
         ask = input("Do you want to view, add or edit the list? ")
         print()
 
-    elif ask == "remove":
+    elif ask == "edit":
         print(f"What do you want to remove? ")
         printlist()
         remove_item = input("What do you want to remove? ")
