@@ -7,8 +7,8 @@ def ran():
   return number
 
 def prettyPrint():
-  for i in bingo:
-    print(i)
+  for row in bingo:
+    print(row)
 
 numbers = []
 for i in range(8):

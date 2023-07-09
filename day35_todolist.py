@@ -70,9 +70,8 @@ while ask == "view" or "add" or "remove":
                 todo_list.remove(remove_item)
                 print(f"{remove_item} is removed!")
 
-
-        else:
-            print("was not in the list.")
+            else:
+                 print("was not in the list.")
 
         
         ask = input("Do you want to view, add or edit the list? ")

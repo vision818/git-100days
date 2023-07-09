@@ -9,4 +9,6 @@ print()
 for name, value in example.items():
     print(f"{name} : {value}")
 
+    print()
+
 print(example)
