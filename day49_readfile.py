@@ -27,6 +27,6 @@ while True:
 
 f.close()
 
-time.sleep(3) # pause for three seconds before printing the result
+time.sleep(1) # pause for one second before printing the result
 
 print("The winner is", name, "with", highscore)
