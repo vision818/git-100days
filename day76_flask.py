@@ -1,4 +1,19 @@
-<html>
+from flask import Flask
+import datetime # import the datetime library
+
+app = Flask(__name__, static_url_path="/static")
+
+
+@app.route('/')
+def index():
+    return 'Hello from Flask!'
+
+@app.route('/home') 
+def home():
+  today = datetime.date.today() # Get today's date
+  page = f"""html 
+  # Format the html as an fString
+  <html>
 
 <head>
   <meta charset="utf-8">
@@ -52,3 +67,6 @@
 </body>
 
 </html>
+
+  
+  """
