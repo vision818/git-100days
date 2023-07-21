@@ -10,7 +10,6 @@ def index():
 
 @app.route('/home') 
 def home():
-  today = datetime.date.today() # Get today's date
   page = f"""html 
   # Format the html as an fString
   <html>
